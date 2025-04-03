@@ -12,5 +12,10 @@ pipeline {
                 sh echo "Teste step 2"
             }
         }
+        stage('Build Docker Image') {
+            steps {
+                sh echo "Teste step 3"
+            }
+        }
     }
 }
