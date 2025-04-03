@@ -7,18 +7,19 @@ pipeline {
     stages {
         stage('Build Docker Image') {
             steps {
-                sh 'echo "Teste step 1"'
+                sh 'echo "Executando o comando Docker Build"'
             }
         }
         stage('Build Docker Image') {
             steps {
-                sh echo "Teste step 2"
+                sh 'echo "Executando o comando Docker push"'
             }
         }
         stage('Build Docker Image') {
             steps {
-                sh echo "Teste step 3"
+                sh 'echo "Executando o comando Docker kubectl apply"'
             }
         }
     }
 }
+
